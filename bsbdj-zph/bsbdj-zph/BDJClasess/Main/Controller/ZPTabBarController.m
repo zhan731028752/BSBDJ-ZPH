@@ -22,10 +22,12 @@
  {
      UIButton *publishBtn=[[UIButton alloc]init];
      
+     [publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+     [publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+     
+     [publishBtn sizeToFit];
+     [publishBtn addTarget:self action:@selector(publishBtnClick) forControlEvents:UIControlEventTouchUpInside];
      _publishBtn=publishBtn;
-     [self.publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-     [self.publishBtn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
-     [self.publishBtn sizeToFit];
      [self.tabBar addSubview:publishBtn];
  }
     return _publishBtn;
@@ -59,14 +61,15 @@
 +(void)load
 {
     UITabBarItem  *tar=[UITabBarItem appearance];
+   UITabBar  *tar1=[UITabBar appearance];
+    tar1.tintColor=[UIColor blackColor];
     
     NSMutableDictionary *dictM=[NSMutableDictionary dictionary];
     
     dictM[NSFontAttributeName]=[UIFont systemFontOfSize:12];
     
-   //dictM[NSForegroundColorAttributeName]=[UIColor blackColor];
-    
     [tar setTitleTextAttributes:dictM forState:UIControlStateNormal];
+   
     
     
 }
@@ -86,7 +89,7 @@
     
     //添加发布
     UIViewController  *vc2=[[NSClassFromString(@"ZPPublishVC") alloc]init];
-    [self addOneChildViewControllerWithVc:vc2 imageName:nil selImage:nil title:nil];
+    [self  addChildViewController:vc2];
     vc2.tabBarItem.enabled=NO;
    
     //添加关注
@@ -105,6 +108,8 @@
 {
 
     ZPNavigationController  *nav=[[ZPNavigationController alloc]initWithRootViewController:Vc];
+    
+    
     if(imageN!=nil||selImage!=nil){
     nav.tabBarItem.image=[UIImage imageWithRenderOriginalModeName:imageN];
     
@@ -117,4 +122,10 @@
 }
 
 
+//发布按钮点击调用
+-(void)publishBtnClick
+{
+    NSLog(@"dd");
+
+}
 @end

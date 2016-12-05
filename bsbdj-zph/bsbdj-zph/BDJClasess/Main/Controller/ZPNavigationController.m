@@ -7,7 +7,7 @@
 //
 
 #import "ZPNavigationController.h"
-
+#import "ZPNavBar.h"
 @interface ZPNavigationController ()
 
 @end
@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ZPNavBar  *bar=[[ZPNavBar alloc]init];
+    //bar.frame=self.navigationBar.bounds;
+    [self setValue:bar forKey:@"navigationBar"];
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -23,5 +27,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-
++(void)load
+{
+    UINavigationBar *bar=[UINavigationBar appearance];
+    
+    NSMutableDictionary *dictM=[NSMutableDictionary dictionary];
+    dictM[NSFontAttributeName]=[UIFont boldSystemFontOfSize:18];
+    [bar  setTitleTextAttributes:dictM];
+    
+    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics: UIBarMetricsDefault];
+   
+}
 @end

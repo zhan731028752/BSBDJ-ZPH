@@ -7,7 +7,7 @@
 //
 
 #import "ZPEssenceVC.h"
-
+#import "UIBarButtonItem+ZPItem.h"
 @interface ZPEssenceVC ()
 
 @end
@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor redColor];
+    
+    [self setUpNav];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +26,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+//设置导航条
+-(void)setUpNav
+{
+    
+    //设置中间视图
+    self.navigationItem.titleView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    //设置导航条左侧
+   
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem BarButtonItemWithNormalName:@"nav_item_game_iconN" HighlightN:@"nav_item_game_click_iconN" target:self action:@selector(gameBtnClick:)];
+    //设置导航条右侧
+    
+ self.navigationItem.rightBarButtonItem=[UIBarButtonItem BarButtonItemWithNormalName:@"navigationButtonRandomN" HighlightN:@"navigationButtonRandomClickN" target:self action:@selector(randomBtnClick:)];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
+- (void)gameBtnClick:(UIButton *)gameBtn
+{
+
+    NSLog(@"%s",__func__);
+
+}
+
+- (void)randomBtnClick:(UIButton *)randomBtn
+{
+
+ NSLog(@"%s",__func__);
+
+}
 
 @end

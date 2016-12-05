@@ -18,21 +18,26 @@
     [super viewDidLoad];
    
     self.view.backgroundColor=[UIColor yellowColor];
+    [self setUpNav];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//设置导航条
+-(void)setUpNav
+{
+    
+    //设置中间视图
+    self.navigationItem.title=@"我的关注";
+    
+    //设置导航条左侧
+    
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem BarButtonItemWithNormalName:@"friendsRecommentIcon" HighlightN:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecommentBtnClick:)];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)friendsRecommentBtnClick:(UIButton *)btn
+{
+    
+   
 }
-*/
 
 @end

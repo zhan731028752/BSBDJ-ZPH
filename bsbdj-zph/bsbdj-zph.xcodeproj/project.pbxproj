@@ -19,6 +19,11 @@
 		842294A91DF43D2500CBB80D /* ZPMineTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294A81DF43D2500CBB80D /* ZPMineTableVC.m */; };
 		842294AC1DF43D4D00CBB80D /* ZPPublishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294AB1DF43D4D00CBB80D /* ZPPublishVC.m */; };
 		842294AF1DF441A000CBB80D /* UIImage+ZP.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294AE1DF441A000CBB80D /* UIImage+ZP.m */; };
+		842294B61DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294B51DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m */; };
+		848DA3351DF50C5200D538EA /* ZPSettingTableVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA3341DF50C5200D538EA /* ZPSettingTableVc.m */; };
+		848DA3381DF5145D00D538EA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA3371DF5145D00D538EA /* UIView+frame.m */; };
+		848DA33B1DF515E600D538EA /* ZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA33A1DF515E600D538EA /* ZPBackView.m */; };
+		848DA3411DF5183E00D538EA /* ZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA3401DF5183E00D538EA /* ZPNavBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,16 @@
 		842294AD1DF441A000CBB80D /* UIImage+ZP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZP.h"; sourceTree = "<group>"; };
 		842294AE1DF441A000CBB80D /* UIImage+ZP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZP.m"; sourceTree = "<group>"; };
 		842294B01DF4425D00CBB80D /* bsbdj-zph.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bsbdj-zph.pch"; sourceTree = "<group>"; };
+		842294B41DF45D7600CBB80D /* UIBarButtonItem+ZPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZPItem.h"; sourceTree = "<group>"; };
+		842294B51DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZPItem.m"; sourceTree = "<group>"; };
+		848DA3331DF50C5200D538EA /* ZPSettingTableVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPSettingTableVc.h; sourceTree = "<group>"; };
+		848DA3341DF50C5200D538EA /* ZPSettingTableVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPSettingTableVc.m; sourceTree = "<group>"; };
+		848DA3361DF5145D00D538EA /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		848DA3371DF5145D00D538EA /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		848DA3391DF515E600D538EA /* ZPBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPBackView.h; sourceTree = "<group>"; };
+		848DA33A1DF515E600D538EA /* ZPBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPBackView.m; sourceTree = "<group>"; };
+		848DA33F1DF5183E00D538EA /* ZPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNavBar.h; sourceTree = "<group>"; };
+		848DA3401DF5183E00D538EA /* ZPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNavBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		842294781DF42A0500CBB80D /* BDJClasess */ = {
 			isa = PBXGroup;
 			children = (
+				848DA32F1DF50BE400D538EA /* Setting(设置) */,
 				842294811DF42A0500CBB80D /* Main */,
 				842294791DF42A0500CBB80D /* Essence(精华) */,
 				842294891DF42A0500CBB80D /* New(新帖) */,
@@ -308,6 +324,10 @@
 			children = (
 				842294AD1DF441A000CBB80D /* UIImage+ZP.h */,
 				842294AE1DF441A000CBB80D /* UIImage+ZP.m */,
+				842294B41DF45D7600CBB80D /* UIBarButtonItem+ZPItem.h */,
+				842294B51DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m */,
+				848DA3361DF5145D00D538EA /* UIView+frame.h */,
+				848DA3371DF5145D00D538EA /* UIView+frame.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -341,6 +361,43 @@
 		842294941DF42A0500CBB80D /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848DA32F1DF50BE400D538EA /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				848DA3301DF50BE400D538EA /* Controller */,
+				848DA3311DF50BE400D538EA /* Model */,
+				848DA3321DF50BE400D538EA /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		848DA3301DF50BE400D538EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				848DA3331DF50C5200D538EA /* ZPSettingTableVc.h */,
+				848DA3341DF50C5200D538EA /* ZPSettingTableVc.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		848DA3311DF50BE400D538EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		848DA3321DF50BE400D538EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848DA3391DF515E600D538EA /* ZPBackView.h */,
+				848DA33A1DF515E600D538EA /* ZPBackView.m */,
+				848DA33F1DF5183E00D538EA /* ZPNavBar.h */,
+				848DA3401DF5183E00D538EA /* ZPNavBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,12 +474,17 @@
 				842294661DF426EE00CBB80D /* AppDelegate.m in Sources */,
 				842294AF1DF441A000CBB80D /* UIImage+ZP.m in Sources */,
 				842294A61DF43D0C00CBB80D /* ZPFriendTreandsVC.m in Sources */,
+				848DA33B1DF515E600D538EA /* ZPBackView.m in Sources */,
 				842294A31DF43CDE00CBB80D /* ZPNewViewController.m in Sources */,
 				8422949D1DF42BAE00CBB80D /* ZPNavigationController.m in Sources */,
+				848DA3411DF5183E00D538EA /* ZPNavBar.m in Sources */,
+				842294B61DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m in Sources */,
 				842294631DF426EE00CBB80D /* main.m in Sources */,
 				842294A01DF43CC900CBB80D /* ZPEssenceVC.m in Sources */,
 				842294A91DF43D2500CBB80D /* ZPMineTableVC.m in Sources */,
 				8422949A1DF42B2300CBB80D /* ZPTabBarController.m in Sources */,
+				848DA3381DF5145D00D538EA /* UIView+frame.m in Sources */,
+				848DA3351DF50C5200D538EA /* ZPSettingTableVc.m in Sources */,
 				842294AC1DF43D4D00CBB80D /* ZPPublishVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
