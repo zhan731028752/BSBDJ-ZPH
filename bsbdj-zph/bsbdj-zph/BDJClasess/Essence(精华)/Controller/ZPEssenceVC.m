@@ -36,8 +36,8 @@
     //设置导航条左侧
    
     self.navigationItem.leftBarButtonItem=[UIBarButtonItem BarButtonItemWithNormalName:@"nav_item_game_iconN" HighlightN:@"nav_item_game_click_iconN" target:self action:@selector(gameBtnClick:)];
-    //设置导航条右侧
     
+    //设置导航条右侧
  self.navigationItem.rightBarButtonItem=[UIBarButtonItem BarButtonItemWithNormalName:@"navigationButtonRandomN" HighlightN:@"navigationButtonRandomClickN" target:self action:@selector(randomBtnClick:)];
 
 }

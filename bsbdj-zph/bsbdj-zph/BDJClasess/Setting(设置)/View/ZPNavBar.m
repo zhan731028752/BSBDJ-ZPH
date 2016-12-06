@@ -11,6 +11,8 @@
 @implementation ZPNavBar
 -(void)layoutSubviews
 {
+    [super layoutSubviews];
+    
     for (UIView *view in self.subviews)
     {
         if([view isKindOfClass:NSClassFromString(@"ZPBackView")])

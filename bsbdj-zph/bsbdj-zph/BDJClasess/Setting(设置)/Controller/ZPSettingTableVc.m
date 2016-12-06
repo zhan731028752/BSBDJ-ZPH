@@ -16,21 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpNav];
-}
-
-//设置导航条
-- (void)setUpNav
-{
     
-    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:[ZPBackView backViewWithNormalName:@"navigationButtonReturn"  HighlightN:@"navigationButtonReturn" title:@"返回" target:self action:@selector(back)]];
+   
+    }
 
-}
+////设置导航条
+//- (void)setUpNav
+//{
+//    
+////    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:[ZPBackView backViewWithNormalName:@"navigationButtonReturn"  HighlightN:@"navigationButtonReturn" title:@"返回" target:self action:@selector(back)]];
+//    
+//    self.hidesBottomBarWhenPushed=YES;
+//}
 
--(void)back
-{
 
-    NSLog(@"%s",__func__);
-}
 
 @end

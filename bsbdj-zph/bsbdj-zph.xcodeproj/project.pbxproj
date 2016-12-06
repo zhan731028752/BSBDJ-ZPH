@@ -10,7 +10,6 @@
 		842294631DF426EE00CBB80D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294621DF426EE00CBB80D /* main.m */; };
 		842294661DF426EE00CBB80D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294651DF426EE00CBB80D /* AppDelegate.m */; };
 		8422946E1DF426EE00CBB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422946D1DF426EE00CBB80D /* Assets.xcassets */; };
-		842294711DF426EE00CBB80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8422946F1DF426EE00CBB80D /* LaunchScreen.storyboard */; };
 		8422949A1DF42B2300CBB80D /* ZPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294991DF42B2300CBB80D /* ZPTabBarController.m */; };
 		8422949D1DF42BAE00CBB80D /* ZPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422949C1DF42BAE00CBB80D /* ZPNavigationController.m */; };
 		842294A01DF43CC900CBB80D /* ZPEssenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8422949F1DF43CC900CBB80D /* ZPEssenceVC.m */; };
@@ -32,7 +31,6 @@
 		842294641DF426EE00CBB80D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		842294651DF426EE00CBB80D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8422946D1DF426EE00CBB80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		842294701DF426EE00CBB80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842294721DF426EE00CBB80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842294981DF42B2300CBB80D /* ZPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPTabBarController.h; sourceTree = "<group>"; };
 		842294991DF42B2300CBB80D /* ZPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPTabBarController.m; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				842294651DF426EE00CBB80D /* AppDelegate.m */,
 				842294B01DF4425D00CBB80D /* bsbdj-zph.pch */,
 				8422946D1DF426EE00CBB80D /* Assets.xcassets */,
-				8422946F1DF426EE00CBB80D /* LaunchScreen.storyboard */,
 				842294721DF426EE00CBB80D /* Info.plist */,
 				842294611DF426EE00CBB80D /* Supporting Files */,
 			);
@@ -459,7 +456,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842294711DF426EE00CBB80D /* LaunchScreen.storyboard in Resources */,
 				8422946E1DF426EE00CBB80D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,17 +486,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8422946F1DF426EE00CBB80D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				842294701DF426EE00CBB80D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		842294731DF426EE00CBB80D /* Debug */ = {
@@ -591,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bsbdj-zph/bsbdj-zph.pch";
 				INFOPLIST_FILE = "bsbdj-zph/Info.plist";
@@ -605,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bsbdj-zph/bsbdj-zph.pch";
 				INFOPLIST_FILE = "bsbdj-zph/Info.plist";

@@ -109,14 +109,13 @@
 
     ZPNavigationController  *nav=[[ZPNavigationController alloc]initWithRootViewController:Vc];
     
-    
-    if(imageN!=nil||selImage!=nil){
+
     nav.tabBarItem.image=[UIImage imageWithRenderOriginalModeName:imageN];
     
     nav.tabBarItem.selectedImage=[UIImage imageWithRenderOriginalModeName:selImage];
     
     nav.tabBarItem.title=title;
-    }
+   
     [self addChildViewController:nav];
     
 }
