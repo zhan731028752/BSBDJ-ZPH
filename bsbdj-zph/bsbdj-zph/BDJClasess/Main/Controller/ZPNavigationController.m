@@ -9,7 +9,7 @@
 #import "ZPNavigationController.h"
 #import "ZPNavBar.h"
 #import "ZPBackView.h"
-@interface ZPNavigationController ()
+@interface ZPNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -19,7 +19,18 @@
     [super viewDidLoad];
     ZPNavBar  *bar=[[ZPNavBar alloc]init];
    [self setValue:bar forKey:@"navigationBar"];
-   
+   // <UIScreenEdgePanGestureRecognizer: 0x7fb748c56560; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7fb748c49c80>; target= <(action=handleNavigationTransition:,
+ id  target=self.interactivePopGestureRecognizer.delegate ;
+   //NSLog(@"%@",self.interactivePopGestureRecognizer) ;
+    //让全屏都有拖拽的效果
+    //用边缘拖拽的默认代理,来执行系统的方法
+    UIPanGestureRecognizer  *pan=[[UIPanGestureRecognizer alloc]initWithTarget:target action:@selector(handleNavigationTransition:)];
+    
+    self.interactivePopGestureRecognizer.enabled=NO;
+    pan.delegate=self;
+    [self.view addGestureRecognizer:pan];
+    
+//     NSLog(@"%@",self.interactivePopGestureRecognizer.delegate) ;
 }
 
 
@@ -50,9 +61,20 @@
     [super pushViewController:viewController animated:YES];
 }
 
+//实现UIGestureRecognizerDelegate代理方法
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+     //这些会解除根控制器拖拽后产生假死的bug
+    return self.childViewControllers.count>1;
+
+
+}
 -(void)back
 {
     [self popViewControllerAnimated:YES];
     //NSLog(@"%s",__func__);
 }
+
+
+
 @end

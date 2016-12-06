@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZPAdViewController">
+            <connections>
+                <outlet property="contionV" destination="Cl0-uR-NUz" id="D5m-PV-9Ou"/>
+                <outlet property="jumpBtn" destination="8do-0O-Nfv" id="Q9t-3L-OCZ"/>
+                <outlet property="launchImageV" destination="UmF-qc-Lm4" id="ieU-0g-tpo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-qc-Lm4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-uR-NUz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8do-0O-Nfv">
+                            <rect key="frame" x="329" y="10" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="adBtnClick" destination="-1" eventType="touchUpInside" id="71C-cL-5VO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8do-0O-Nfv" firstAttribute="top" secondItem="Cl0-uR-NUz" secondAttribute="top" constant="10" id="F3N-bD-oVc"/>
+                        <constraint firstAttribute="trailing" secondItem="8do-0O-Nfv" secondAttribute="trailing" id="NT8-Xp-VNt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UmF-qc-Lm4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="13L-ky-aF3"/>
+                <constraint firstAttribute="trailing" secondItem="UmF-qc-Lm4" secondAttribute="trailing" id="71x-wy-iCE"/>
+                <constraint firstItem="UmF-qc-Lm4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Bv-Oo-q0C"/>
+                <constraint firstItem="Cl0-uR-NUz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H4T-0F-GGz"/>
+                <constraint firstAttribute="bottom" secondItem="UmF-qc-Lm4" secondAttribute="bottom" id="NEC-r9-q4M"/>
+                <constraint firstAttribute="trailing" secondItem="UmF-qc-Lm4" secondAttribute="trailing" id="OvF-8X-LJU"/>
+                <constraint firstItem="UmF-qc-Lm4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UOc-eU-EUK"/>
+                <constraint firstAttribute="trailing" secondItem="Cl0-uR-NUz" secondAttribute="trailing" id="YAO-03-kvs"/>
+                <constraint firstAttribute="bottom" secondItem="Cl0-uR-NUz" secondAttribute="bottom" id="c9x-ZD-5ex"/>
+                <constraint firstItem="UmF-qc-Lm4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iE4-TK-IDf"/>
+                <constraint firstItem="Cl0-uR-NUz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iij-54-grV"/>
+                <constraint firstAttribute="bottom" secondItem="UmF-qc-Lm4" secondAttribute="bottom" id="tQZ-Iv-nZV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

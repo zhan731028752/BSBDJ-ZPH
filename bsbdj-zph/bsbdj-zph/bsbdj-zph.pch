@@ -9,3 +9,5 @@
 #import "UIImage+ZP.h"
 #import "UIBarButtonItem+ZPItem.h"
 #import "UIView+frame.h"
+#define  ScreenH [UIScreen mainScreen].bounds.size.height
+#define  ScreenW  [UIScreen mainScreen].bounds.size.width

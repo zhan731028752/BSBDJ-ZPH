@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ZPTabBarController.h"
 
+#import "ZPAdViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,9 +22,10 @@
     self.window=[[UIWindow alloc]init];
     
     //设置创建根控制器
-    ZPTabBarController  *taV=[[ZPTabBarController alloc]init];
     
-    self.window.rootViewController=taV;
+    
+    ZPAdViewController *rootV=[[ZPAdViewController alloc]init];
+    self.window.rootViewController=rootV;
     
     //显示窗口
     [self.window makeKeyAndVisible];

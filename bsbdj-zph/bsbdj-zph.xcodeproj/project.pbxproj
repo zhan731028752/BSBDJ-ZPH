@@ -23,9 +23,20 @@
 		848DA3381DF5145D00D538EA /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA3371DF5145D00D538EA /* UIView+frame.m */; };
 		848DA33B1DF515E600D538EA /* ZPBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA33A1DF515E600D538EA /* ZPBackView.m */; };
 		848DA3411DF5183E00D538EA /* ZPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 848DA3401DF5183E00D538EA /* ZPNavBar.m */; };
+		84DFE32D1DF6CCA90030BCCF /* ZPAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFE32B1DF6CCA90030BCCF /* ZPAdViewController.m */; };
+		84DFE32E1DF6CCA90030BCCF /* ZPAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE32C1DF6CCA90030BCCF /* ZPAdViewController.xib */; };
+		84DFE3371DF6D2520030BCCF /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3301DF6D2520030BCCF /* LaunchImage-568h@2x.png */; };
+		84DFE3381DF6D2520030BCCF /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3311DF6D2520030BCCF /* LaunchImage-700-568h@2x.png */; };
+		84DFE3391DF6D2520030BCCF /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3321DF6D2520030BCCF /* LaunchImage-700@2x.png */; };
+		84DFE33A1DF6D2520030BCCF /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3331DF6D2520030BCCF /* LaunchImage-800-667h@2x.png */; };
+		84DFE33B1DF6D2520030BCCF /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3341DF6D2520030BCCF /* LaunchImage-800-Portrait-736h@3x.png */; };
+		84DFE33C1DF6D2520030BCCF /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3351DF6D2520030BCCF /* LaunchImage.png */; };
+		84DFE33D1DF6D2520030BCCF /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFE3361DF6D2520030BCCF /* LaunchImage@2x.png */; };
+		F7781049993F56B3B1D16406 /* libPods-bsbdj-zph.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2EEC961075BF5DE6F38D25 /* libPods-bsbdj-zph.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2EEC961075BF5DE6F38D25 /* libPods-bsbdj-zph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bsbdj-zph.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8422945E1DF426EE00CBB80D /* bsbdj-zph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bsbdj-zph.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842294621DF426EE00CBB80D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842294641DF426EE00CBB80D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +70,18 @@
 		848DA33A1DF515E600D538EA /* ZPBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPBackView.m; sourceTree = "<group>"; };
 		848DA33F1DF5183E00D538EA /* ZPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPNavBar.h; sourceTree = "<group>"; };
 		848DA3401DF5183E00D538EA /* ZPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPNavBar.m; sourceTree = "<group>"; };
+		84DFE32A1DF6CCA90030BCCF /* ZPAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPAdViewController.h; sourceTree = "<group>"; };
+		84DFE32B1DF6CCA90030BCCF /* ZPAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPAdViewController.m; sourceTree = "<group>"; };
+		84DFE32C1DF6CCA90030BCCF /* ZPAdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZPAdViewController.xib; sourceTree = "<group>"; };
+		84DFE3301DF6D2520030BCCF /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		84DFE3311DF6D2520030BCCF /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		84DFE3321DF6D2520030BCCF /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		84DFE3331DF6D2520030BCCF /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		84DFE3341DF6D2520030BCCF /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		84DFE3351DF6D2520030BCCF /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		84DFE3361DF6D2520030BCCF /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		93B51276BFDEB73050DF9A6B /* Pods-bsbdj-zph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bsbdj-zph.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bsbdj-zph/Pods-bsbdj-zph.debug.xcconfig"; sourceTree = "<group>"; };
+		F41E8B5B93262EFD35EA1E0E /* Pods-bsbdj-zph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bsbdj-zph.release.xcconfig"; path = "Pods/Target Support Files/Pods-bsbdj-zph/Pods-bsbdj-zph.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,17 +89,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7781049993F56B3B1D16406 /* libPods-bsbdj-zph.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4947CB4689231A91F0D96222 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C2EEC961075BF5DE6F38D25 /* libPods-bsbdj-zph.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		842294551DF426EE00CBB80D = {
 			isa = PBXGroup;
 			children = (
 				842294601DF426EE00CBB80D /* bsbdj-zph */,
 				8422945F1DF426EE00CBB80D /* Products */,
+				AE258ADFC45C8856B7DA8358 /* Pods */,
+				4947CB4689231A91F0D96222 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				842294621DF426EE00CBB80D /* main.m */,
+				84DFE32F1DF6D2520030BCCF /* 启动图片 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +148,7 @@
 		842294781DF42A0500CBB80D /* BDJClasess */ = {
 			isa = PBXGroup;
 			children = (
+				84DFE31D1DF6CBDD0030BCCF /* Ad(广告) */,
 				848DA32F1DF50BE400D538EA /* Setting(设置) */,
 				842294811DF42A0500CBB80D /* Main */,
 				842294791DF42A0500CBB80D /* Essence(精华) */,
@@ -399,6 +435,63 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		84DFE31D1DF6CBDD0030BCCF /* Ad(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				84DFE31E1DF6CBDD0030BCCF /* Controller */,
+				84DFE3211DF6CBDD0030BCCF /* Model */,
+				84DFE3221DF6CBDD0030BCCF /* View */,
+			);
+			path = "Ad(广告)";
+			sourceTree = "<group>";
+		};
+		84DFE31E1DF6CBDD0030BCCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84DFE32A1DF6CCA90030BCCF /* ZPAdViewController.h */,
+				84DFE32B1DF6CCA90030BCCF /* ZPAdViewController.m */,
+				84DFE32C1DF6CCA90030BCCF /* ZPAdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84DFE3211DF6CBDD0030BCCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84DFE3221DF6CBDD0030BCCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84DFE32F1DF6D2520030BCCF /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				84DFE3301DF6D2520030BCCF /* LaunchImage-568h@2x.png */,
+				84DFE3311DF6D2520030BCCF /* LaunchImage-700-568h@2x.png */,
+				84DFE3321DF6D2520030BCCF /* LaunchImage-700@2x.png */,
+				84DFE3331DF6D2520030BCCF /* LaunchImage-800-667h@2x.png */,
+				84DFE3341DF6D2520030BCCF /* LaunchImage-800-Portrait-736h@3x.png */,
+				84DFE3351DF6D2520030BCCF /* LaunchImage.png */,
+				84DFE3361DF6D2520030BCCF /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		AE258ADFC45C8856B7DA8358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B51276BFDEB73050DF9A6B /* Pods-bsbdj-zph.debug.xcconfig */,
+				F41E8B5B93262EFD35EA1E0E /* Pods-bsbdj-zph.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,9 +499,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842294751DF426EE00CBB80D /* Build configuration list for PBXNativeTarget "bsbdj-zph" */;
 			buildPhases = (
+				FBE9C94B2D4865AFE8EAF9A1 /* [CP] Check Pods Manifest.lock */,
 				8422945A1DF426EE00CBB80D /* Sources */,
 				8422945B1DF426EE00CBB80D /* Frameworks */,
 				8422945C1DF426EE00CBB80D /* Resources */,
+				631B8FD8822C8EE6A4A1961F /* [CP] Embed Pods Frameworks */,
+				7FFA0D9A71A764E3457FDB56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,11 +552,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DFE33C1DF6D2520030BCCF /* LaunchImage.png in Resources */,
+				84DFE33D1DF6D2520030BCCF /* LaunchImage@2x.png in Resources */,
 				8422946E1DF426EE00CBB80D /* Assets.xcassets in Resources */,
+				84DFE33A1DF6D2520030BCCF /* LaunchImage-800-667h@2x.png in Resources */,
+				84DFE3371DF6D2520030BCCF /* LaunchImage-568h@2x.png in Resources */,
+				84DFE3391DF6D2520030BCCF /* LaunchImage-700@2x.png in Resources */,
+				84DFE3381DF6D2520030BCCF /* LaunchImage-700-568h@2x.png in Resources */,
+				84DFE32E1DF6CCA90030BCCF /* ZPAdViewController.xib in Resources */,
+				84DFE33B1DF6D2520030BCCF /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		631B8FD8822C8EE6A4A1961F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bsbdj-zph/Pods-bsbdj-zph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFA0D9A71A764E3457FDB56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bsbdj-zph/Pods-bsbdj-zph-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE9C94B2D4865AFE8EAF9A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8422945A1DF426EE00CBB80D /* Sources */ = {
@@ -480,6 +632,7 @@
 				842294A91DF43D2500CBB80D /* ZPMineTableVC.m in Sources */,
 				8422949A1DF42B2300CBB80D /* ZPTabBarController.m in Sources */,
 				848DA3381DF5145D00D538EA /* UIView+frame.m in Sources */,
+				84DFE32D1DF6CCA90030BCCF /* ZPAdViewController.m in Sources */,
 				848DA3351DF50C5200D538EA /* ZPSettingTableVc.m in Sources */,
 				842294AC1DF43D4D00CBB80D /* ZPPublishVC.m in Sources */,
 			);
@@ -574,6 +727,7 @@
 		};
 		842294761DF426EE00CBB80D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B51276BFDEB73050DF9A6B /* Pods-bsbdj-zph.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -589,6 +743,7 @@
 		};
 		842294771DF426EE00CBB80D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41E8B5B93262EFD35EA1E0E /* Pods-bsbdj-zph.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
