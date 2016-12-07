@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8414F46D1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414F46C1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.m */; };
+		8414F47B1DF6E7FA0067B39E /* ZPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414F47A1DF6E7FA0067B39E /* ZPAdItem.m */; };
 		842294631DF426EE00CBB80D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294621DF426EE00CBB80D /* main.m */; };
 		842294661DF426EE00CBB80D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842294651DF426EE00CBB80D /* AppDelegate.m */; };
 		8422946E1DF426EE00CBB80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422946D1DF426EE00CBB80D /* Assets.xcassets */; };
@@ -37,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		3C2EEC961075BF5DE6F38D25 /* libPods-bsbdj-zph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bsbdj-zph.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8414F46B1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ZPmanager.h"; sourceTree = "<group>"; };
+		8414F46C1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ZPmanager.m"; sourceTree = "<group>"; };
+		8414F4791DF6E7FA0067B39E /* ZPAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPAdItem.h; sourceTree = "<group>"; };
+		8414F47A1DF6E7FA0067B39E /* ZPAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPAdItem.m; sourceTree = "<group>"; };
 		8422945E1DF426EE00CBB80D /* bsbdj-zph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bsbdj-zph.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842294621DF426EE00CBB80D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842294641DF426EE00CBB80D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +108,22 @@
 				3C2EEC961075BF5DE6F38D25 /* libPods-bsbdj-zph.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8414F4771DF6E7E90067B39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8414F4781DF6E7F10067B39E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8414F4791DF6E7FA0067B39E /* ZPAdItem.h */,
+				8414F47A1DF6E7FA0067B39E /* ZPAdItem.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		842294551DF426EE00CBB80D = {
@@ -355,6 +377,8 @@
 		842294901DF42A0500CBB80D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8414F46B1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.h */,
+				8414F46C1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.m */,
 				842294AD1DF441A000CBB80D /* UIImage+ZP.h */,
 				842294AE1DF441A000CBB80D /* UIImage+ZP.m */,
 				842294B41DF45D7600CBB80D /* UIBarButtonItem+ZPItem.h */,
@@ -439,8 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				84DFE31E1DF6CBDD0030BCCF /* Controller */,
-				84DFE3211DF6CBDD0030BCCF /* Model */,
-				84DFE3221DF6CBDD0030BCCF /* View */,
+				8414F4781DF6E7F10067B39E /* Model */,
+				8414F4771DF6E7E90067B39E /* View */,
 			);
 			path = "Ad(广告)";
 			sourceTree = "<group>";
@@ -453,20 +477,6 @@
 				84DFE32C1DF6CCA90030BCCF /* ZPAdViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		84DFE3211DF6CBDD0030BCCF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		84DFE3221DF6CBDD0030BCCF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		84DFE32F1DF6D2520030BCCF /* 启动图片 */ = {
@@ -624,6 +634,7 @@
 				842294A61DF43D0C00CBB80D /* ZPFriendTreandsVC.m in Sources */,
 				848DA33B1DF515E600D538EA /* ZPBackView.m in Sources */,
 				842294A31DF43CDE00CBB80D /* ZPNewViewController.m in Sources */,
+				8414F47B1DF6E7FA0067B39E /* ZPAdItem.m in Sources */,
 				8422949D1DF42BAE00CBB80D /* ZPNavigationController.m in Sources */,
 				848DA3411DF5183E00D538EA /* ZPNavBar.m in Sources */,
 				842294B61DF45D7600CBB80D /* UIBarButtonItem+ZPItem.m in Sources */,
@@ -633,6 +644,7 @@
 				8422949A1DF42B2300CBB80D /* ZPTabBarController.m in Sources */,
 				848DA3381DF5145D00D538EA /* UIView+frame.m in Sources */,
 				84DFE32D1DF6CCA90030BCCF /* ZPAdViewController.m in Sources */,
+				8414F46D1DF6E6D40067B39E /* AFHTTPSessionManager+ZPmanager.m in Sources */,
 				848DA3351DF50C5200D538EA /* ZPSettingTableVc.m in Sources */,
 				842294AC1DF43D4D00CBB80D /* ZPPublishVC.m in Sources */,
 			);

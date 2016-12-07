@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZPAdViewController">
             <connections>
                 <outlet property="contionV" destination="Cl0-uR-NUz" id="D5m-PV-9Ou"/>
-                <outlet property="jumpBtn" destination="8do-0O-Nfv" id="Q9t-3L-OCZ"/>
+                <outlet property="jumpBtn" destination="Qa0-Ot-aDX" id="MQe-sx-rJ1"/>
                 <outlet property="launchImageV" destination="UmF-qc-Lm4" id="ieU-0g-tpo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,23 +21,23 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-qc-Lm4">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-uR-NUz">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8do-0O-Nfv">
-                            <rect key="frame" x="329" y="10" width="46" height="30"/>
-                            <state key="normal" title="Button"/>
-                            <connections>
-                                <action selector="adBtnClick" destination="-1" eventType="touchUpInside" id="71C-cL-5VO"/>
-                            </connections>
-                        </button>
-                    </subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-uR-NUz">
+                    <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="8do-0O-Nfv" firstAttribute="top" secondItem="Cl0-uR-NUz" secondAttribute="top" constant="10" id="F3N-bD-oVc"/>
-                        <constraint firstAttribute="trailing" secondItem="8do-0O-Nfv" secondAttribute="trailing" id="NT8-Xp-VNt"/>
-                    </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-Ot-aDX">
+                    <rect key="frame" x="315" y="10" width="60" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="1hn-VB-Mh9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="adBtnClick" destination="-1" eventType="touchUpInside" id="DeT-C4-y6H"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -49,13 +49,16 @@
                 <constraint firstAttribute="trailing" secondItem="UmF-qc-Lm4" secondAttribute="trailing" id="OvF-8X-LJU"/>
                 <constraint firstItem="UmF-qc-Lm4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UOc-eU-EUK"/>
                 <constraint firstAttribute="trailing" secondItem="Cl0-uR-NUz" secondAttribute="trailing" id="YAO-03-kvs"/>
+                <constraint firstAttribute="trailing" secondItem="Qa0-Ot-aDX" secondAttribute="trailing" id="aew-x7-1Kp"/>
                 <constraint firstAttribute="bottom" secondItem="Cl0-uR-NUz" secondAttribute="bottom" id="c9x-ZD-5ex"/>
                 <constraint firstItem="UmF-qc-Lm4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iE4-TK-IDf"/>
                 <constraint firstItem="Cl0-uR-NUz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iij-54-grV"/>
                 <constraint firstAttribute="bottom" secondItem="UmF-qc-Lm4" secondAttribute="bottom" id="tQZ-Iv-nZV"/>
+                <constraint firstItem="Qa0-Ot-aDX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="zWD-Pc-FhQ"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="500.5" y="160.5"/>
         </view>
     </objects>
 </document>
