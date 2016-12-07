@@ -15,6 +15,12 @@
  */
 + (instancetype)ZP_Manager;
 
--(NSURLSessionDataTask *)ZP_GET:(NSString *)URLString parameters:(id)parameters progress:(void (^)(NSProgress * _Nonnull))downloadProgress success:(void (^)(NSURLSessionDataTask *, id ))success failure:(void (^)(NSURLSessionDataTask * , NSError * ))failure;
+- (NSURLSessionDataTask *)ZP_GET:(NSString *)URLString
+                   parameters:(id)parameters
+                     progress:(void (^)(NSProgress * _Nonnull))downloadProgress
+                      success:(void (^)(NSURLSessionDataTask * _Nonnull, id _Nullable))success
+                         failure:(void (^)(NSURLSessionDataTask * _Nullable, NSError * _Nonnull))failure;
+
+
 
 @end

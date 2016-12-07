@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ZPAdViewController.h"
+#import "ZPTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,8 +24,11 @@
     
     //设置创建根控制器
     
+#warning 打包上架的时候要改过了
+   // ZPAdViewController *rootV=[[ZPAdViewController alloc]init];
     
-    ZPAdViewController *rootV=[[ZPAdViewController alloc]init];
+    ZPTabBarController  *rootV=[[ZPTabBarController alloc]init];
+    rootV.selectedIndex=1;
     self.window.rootViewController=rootV;
     
     //显示窗口

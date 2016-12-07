@@ -124,7 +124,6 @@
 //发布按钮点击调用
 -(void)publishBtnClick
 {
-    NSLog(@"dd");
-
+   
 }
 @end

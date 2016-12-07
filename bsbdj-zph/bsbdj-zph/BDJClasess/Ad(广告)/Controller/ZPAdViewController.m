@@ -73,7 +73,7 @@
     dict[@"code2"]=parameter;
     NSString  *url=@"http://mobads.baidu.com/cpro/ui/mads.php";
     
-    [manager GET:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+     [manager GET:url parameters:dict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //把数据写入plist文件
         [responseObject writeToFile:@"/Users/admin/Desktop/data.plist "atomically:YES];
@@ -85,7 +85,9 @@
         ZPAdItem   *item=[ZPAdItem mj_objectWithKeyValues:diam];
         
         UIImageView *imageV=[[UIImageView alloc]init];
-        
+         
+         if(item.w==0) return;
+         
         CGFloat h=item.h*ScreenW/item.w;
         
         imageV.frame=CGRectMake(0, 0, ScreenW, h);
@@ -123,6 +125,7 @@
     UIImage *image=nil;
     
     if(iPhone6P){
+        
         image=[UIImage imageNamed:@"LaunchImage-800-Portrait-736h"];
         
     }else if(iPhone6){
@@ -154,6 +157,7 @@
     [UIApplication sharedApplication].keyWindow.rootViewController=tarV;
     
     [self.timer invalidate];
+    
     self.timer=nil;
     
 }

@@ -7,6 +7,7 @@
 //
 
 #import "ZPNewViewController.h"
+#import "ZPTagboardVc.h"
 
 @interface ZPNewViewController ()
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
      self.view.backgroundColor=[UIColor blueColor];
     [self setUpNav];
 }
@@ -42,7 +43,10 @@
 
 - (void)TagSubBtnClick:(UIButton *)btn
 {
-
-    NSLog(@"dd");
+    
+    ZPTagboardVc *tagV=[[ZPTagboardVc alloc]init];
+    
+    [self.navigationController pushViewController:tagV animated:YES];
+    
 }
 @end

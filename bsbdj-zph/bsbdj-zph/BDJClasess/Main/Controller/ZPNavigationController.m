@@ -29,7 +29,7 @@
     self.interactivePopGestureRecognizer.enabled=NO;
     pan.delegate=self;
     [self.view addGestureRecognizer:pan];
-    
+    //self.interactivePopGestureRecognizer.delegate==
 //     NSLog(@"%@",self.interactivePopGestureRecognizer.delegate) ;
 }
 
