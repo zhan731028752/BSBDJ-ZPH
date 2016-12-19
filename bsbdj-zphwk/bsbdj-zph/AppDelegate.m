@@ -28,7 +28,7 @@
    // ZPAdViewController *rootV=[[ZPAdViewController alloc]init];
     
     ZPTabBarController  *rootV=[[ZPTabBarController alloc]init];
-    rootV.selectedIndex=1;
+//    rootV.selectedIndex=1;
     self.window.rootViewController=rootV;
     
     //显示窗口

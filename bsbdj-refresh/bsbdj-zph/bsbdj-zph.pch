@@ -1,0 +1,24 @@
+//
+//  bsbdj-zph.pch
+//  bsbdj-zph
+//
+//  Created by admin on 16/12/4.
+//  Copyright © 2016年 FMB. All rights reserved.
+//
+
+#import "UIImage+ZP.h"
+#import "UIBarButtonItem+ZPItem.h"
+#import "AFHTTPSessionManager+ZPmanager.h"
+#import "UIView+frame.h"
+#define  ScreenH [UIScreen mainScreen].bounds.size.height
+#define  ScreenW  [UIScreen mainScreen].bounds.size.width
+#import "NSAttributedString+ZPAttribute.h"
+#define ZPFun  xmgLog(@"%s",__func__)
+//1为全部，10为图片，29为段子，31为音频，41为视频，默认为
+typedef enum : NSUInteger {
+    TopicMidTypePicture = 10,
+    TopicMidTypeVideo = 41,
+    TopicMidTypeMusic = 31,
+    TopicMidTypeText = 29,
+    TopicMidTypeAll = 1
+} TopicMidType;
